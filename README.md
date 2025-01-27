@@ -5,10 +5,10 @@ Group Name: Arctic Monk
 Section: 5
 
 Team Mates:
-1. Aman Shafeeq Lone 2219161
-2. Muhammad Adam Idurrahman 2218035
-3. Ahmad Syawqi bin Wahid 2121347
-4. Ariff Rostam Haikqal 2319887
+1. ___Aman Shafeeq Lone 2219161___
+2. ___Muhammad Adam Idurrahman 2218035___
+3. ___Ahmad Syawqi bin Wahid 2121347___
+4. ___Ariff Rostam Haikqal 2319887___
 
 ## Rules
 1. You are allowed to have **3 group** members. *Exception* is allowed **IFF (if and only if)** you are allowed to have 4 group members if you are a **multinational** or a **multigender** group. 
@@ -25,8 +25,10 @@ Team Mates:
 
 ***Questions:***
 
-1. What is the link of the fork OSProject in your repository. ***(1 mark)*** https://github.com/joeynor/OSProject
-2. How many files and folders are in this repository. ***(1 mark)*** 1 folder, 7 files total (6 .png files to be exact and 1 .md file)
+1. What is the link of the fork OSProject in your repository. ***(1 mark)***
+ ___https://github.com/joeynor/OSProject___
+2. How many files and folders are in this repository. ***(1 mark)***
+ ___1 folder, 7 files total (6 .png files to be exact and 1 .md file)___
 
 
 ## Exploring github codespaces
@@ -58,9 +60,12 @@ Team Mates:
 
 ***Questions:***
 
-1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** Linux Ubuntu
-2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** 2 core, 8GB ram with 32GB and 4 core, 16GB ram and 32GB.
-3. Why must we commit and sync our current work on source control? ***(1 mark)*** It saves our progress and updates the repository.
+1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** 
+___Linux Ubuntu___
+2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)***
+ ___2 core, 8GB ram with 32GB and 4 core, 16GB ram and 32GB.___
+3. Why must we commit and sync our current work on source control? ***(1 mark)***
+ ___It saves our progress and updates the repository.___
 
 ## Exploring the Terminal
 
@@ -78,7 +83,9 @@ codespace
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
 1. Run the command **pwd** . ***(1 mark)*** /workspaces/OSProject
-2. Run the command **cat /etc/passwd** . ***(1 mark)*** root:x:0:0:root:/root:/bin/bash
+2. Run the command **cat /etc/passwd** . ***(1 mark)***
+```
+   root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 bin:x:2:2:bin:/bin:/usr/sbin/nologin
 sys:x:3:3:sys:/dev:/usr/sbin/nologin
@@ -103,16 +110,22 @@ systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
 messagebus:x:104:105::/nonexistent:/usr/sbin/nologin
 codespace:x:1000:1000::/home/codespace:/bin/bash
 sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
+```
 
-3. Run the command **df** . ***(1 mark)*** Filesystem     1K-blocks     Used Available Use% Mounted on
+3. Run the command **df** . ***(1 mark)***
+```
+Filesystem     1K-blocks     Used Available Use% Mounted on
 overlay         32847680 10705912  20447668  35% /
 tmpfs              65536        0     65536   0% /dev
 shm                65536        0     65536   0% /dev/shm
 /dev/root       30298176 25454336   4827456  85% /vscode
 /dev/sda1       46127956 18731112  25021268  43% /tmp
 /dev/loop4      32847680 10705912  20447668  35% /workspaces
+```
 
-4. Run the command **du** . ***(1 mark)*** 8       ./.git/refs/heads
+4. Run the command **du** . ***(1 mark)*** 8
+```
+   ./.git/refs/heads
 4       ./.git/refs/tags
 12      ./.git/refs/remotes/origin
 16      ./.git/refs/remotes
@@ -203,21 +216,32 @@ shm                65536        0     65536   0% /dev/shm
 2672    ./.git
 1972    ./images
 4668    .
+```
 
-5. Run the command **ls** . ***(1 mark)*** README.md  images
-
-6. Run the command **ls -asl** . ***(1 mark)*** total 40
+5. Run the command **ls** . ***(1 mark)***
+```
+README.md  images
+```
+6. Run the command **ls -asl** . ***(1 mark)***
+```
+    total 40
  4 drwxrwxrwx+ 4 codespace root  4096 Jan 25 14:55 .
  4 drwxr-xrwx+ 5 codespace root  4096 Jan 25 14:55 ..
  4 drwxrwxrwx+ 9 codespace root  4096 Jan 25 16:25 .git
 24 -rw-rw-rw-  1 codespace root 21515 Jan 25 16:34 README.md
  4 drwxrwxrwx+ 2 codespace root  4096 Jan 25 14:55 images
+```
 
-7. Run the command **free -h** . ***(1 mark)***               total        used        free      shared  buff/cache   available
+7. Run the command **free -h** . ***(1 mark)***  
+```
+             total        used        free      shared  buff/cache   available
 Mem:          7.7Gi       1.3Gi       191Mi        61Mi       6.2Gi       6.0Gi
 Swap:            0B          0B          0B
+```
 
-8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** processor       : 0
+8. Run the command **cat /proc/cpuinfo** . ***(1 mark)***
+```
+ processor       : 0
 vendor_id       : AuthenticAMD
 cpu family      : 25
 model           : 1
@@ -272,8 +296,11 @@ clflush size    : 64
 cache_alignment : 64
 address sizes   : 48 bits physical, 48 bits virtual
 power management:
+```
 
-9. Run the command **top** and type **q** to quit. ***(1 mark)*** processor       : 1
+9. Run the command **top** and type **q** to quit. ***(1 mark)*** 
+```
+processor       : 1
 vendor_id       : AuthenticAMD
 cpu family      : 25
 model           : 1
@@ -308,22 +335,32 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6159.2 avail Mem
     167 root      20   0    2616   1408   1408 S   0.0   0.0   0:00.00 sh                                                                                                                       
     358 codespa+  20   0    2624   1536   1536 S   0.0   0.0   0:00.00 sh                                                                                                                       
     368 codespa+  20   0   11.3g 104516  47488 S   0.0   1.3   0:03.96 node      
+```
 
-10. Run the command **uname -a**. ***(1 mark)*** Linux codespaces-d27973 6.5.0-1025-azure #26~22.04.1-Ubuntu SMP Thu Jul 11 22:33:04 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+10. Run the command **uname -a**. ***(1 mark)*** 
+```
+Linux codespaces-d27973 6.5.0-1025-azure #26~22.04.1-Ubuntu SMP Thu Jul 11 22:33:04 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+```
+11. What is the available free memory in the system. ***(1 mark)***
+ ___165.2 MiB___
 
-11. What is the available free memory in the system. ***(1 mark)*** 165.2 MiB
+12. What is the available disk space mounted on /workspace. ***(1 mark)***
+ ___20G___
 
-12. What is the available disk space mounted on /workspace. ***(1 mark)*** 20G
+13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** 
+___x86_64___
 
-13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** x86_64
+14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** 
+___ls just shows the files and directory, but -a shows all the files, -s shows the file size, -l shows detailed information, long listing format.___
 
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** ls just shows the files and directory, but -a shows all the files, -s shows the file size, -l shows detailed information, long listing format.
+15. What is the TLB size of the Virtual CPU. ***(1 mark)***
+ ___2560 entries of 4k pages___
 
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 2560 entries of 4k pages
+16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** 
+___2934.783 MHz___
 
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** 2934.783 MHz
-
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** node
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 
+___node___
 
 ## Running your own container instance.
 
@@ -383,9 +420,11 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 ***Questions:***
 
-1. Are files in the container persistent. Why not?. ***(1 mark)*** No, because we removed the files via the command (docker rm filename)
+1. Are files in the container persistent. Why not?. ***(1 mark)*** 
+___No, because we removed the files via the command (docker rm filename)___
 
-2. Can we run two, or three instances of debian linux? . ***(1 mark)*** Yes
+2. Can we run two, or three instances of debian linux? . ***(1 mark)*** 
+___Yes___
 
 ## Running your own container with persistent storage
 
@@ -404,7 +443,8 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 ***Questions:***
 
-1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** No files were created, but the user and group would be used to create files in the directory.
+1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)***
+ ___No files were created, but the user and group would be used to create files in the directory.___
 
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
@@ -412,7 +452,9 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 sudo chown -R codespace:codespace myroot
 
 ```
+```
 @amanshafeeq123 ➜ /workspaces/OSProject/myroot (main) $ sudo chown -R codespace:codespace /workspaces/OSProject/myroot
+```
 
 ## You are on your own, create your own static webpage
 
@@ -438,11 +480,19 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 
 ***Questions:***
 
-1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** drwxrwxrwx+ 2 1000 1000 4096 Jan 25 17:15 /usr/local/apache2/htdocs -- permission: drwxr-xr-x, user: root, group: root 
+1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** 
+```
+drwxrwxrwx+ 2 1000 1000 4096 Jan 25 17:15 /usr/local/apache2/htdocs -- permission: drwxr-xr-x, user: root, group: root 
+```
 
-2. What port is the apache web server running. ***(1 mark)*** 8080
-3. What port is open for http protocol on the host machine? ***(1 mark)*** 8080
-
+2. What port is the apache web server running. ***(1 mark)*** 
+```
+8080
+```
+3. What port is open for http protocol on the host machine? ***(1 mark)*** 
+```
+8080
+```
 ## Create SUB Networks
 
 1. In docker, you can create your own private networks where you can run multiple services, in this part, we will create two networks, one called bluenet and the other is rednet
@@ -460,21 +510,31 @@ docker run -itd --net rednet --name c2 busybox sh
 ```
 ***Questions:***
 
-1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** busybox combines many unix utilities into a single executable file. --name is used to assign custom names to a container.
+1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** 
+___busybox combines many unix utilities into a single executable file. --name is used to assign custom names to a container.___
 
-2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** NETWORK ID     NAME      DRIVER    SCOPE
+2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** 
+```
+NETWORK ID     NAME      DRIVER    SCOPE
 4db21395d335   bluenet   bridge    local
 d5a0b7bf5c45   bridge    bridge    local
 c348ef3ca1b0   host      host      local
 95171536cf3b   none      null      local
 619a7d843be2   rednet    bridge    local
+```
 
-3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)*** Gateway for bluenet: 172.18.0.1 -- gateway for rednet: 172.19.0.1
-
-4. What is the network address for the running container c1 and c2? ***(1 mark)*** Network address for c1: 172.18.0.0/16 -- Network address for c2: 172.19.0.0/16
-
-5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)*** ping: bad address 'c2'
-
+3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)*** 
+```
+Gateway for bluenet: 172.18.0.1 -- gateway for rednet: 172.19.0.1
+```
+4. What is the network address for the running container c1 and c2? ***(1 mark)***
+```
+ Network address for c1: 172.18.0.0/16 -- Network address for c2: 172.19.0.0/16
+```
+5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)*** 
+```
+ping: bad address 'c2'
+```
 ## Bridging two SUB Networks
 1. Let's try this again by creating a network to bridge the two containers in the two subnetworks
 ```
@@ -485,7 +545,9 @@ docker exec c1 ping c2
 ```
 ***Questions:***
 
-1. Are you able to ping? Show your output . ***(1 mark)*** PING c2 (172.20.0.3): 56 data bytes
+1. Are you able to ping? Show your output . ***(1 mark)*** 
+```
+PING c2 (172.20.0.3): 56 data bytes
 64 bytes from 172.20.0.3: seq=0 ttl=64 time=0.133 ms
 64 bytes from 172.20.0.3: seq=1 ttl=64 time=0.066 ms
 64 bytes from 172.20.0.3: seq=2 ttl=64 time=0.102 ms
@@ -506,8 +568,9 @@ docker exec c1 ping c2
 64 bytes from 172.20.0.3: seq=17 ttl=64 time=0.080 ms
 64 bytes from 172.20.0.3: seq=18 ttl=64 time=0.095 ms
 64 bytes from 172.20.0.3: seq=19 ttl=64 time=0.081 ms
-
-2. What is different from the previous ping in the section above? ***(1 mark)*** We are able to now ping, since in the section earlier the ping did not work.
+```
+2. What is different from the previous ping in the section above? ***(1 mark)*** 
+___We are able to now ping, since in the section earlier the ping did not work.___
 
 ## Intermediate Level (10 marks bonus)
 
@@ -650,17 +713,19 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 
 ***Questions:***
 
-1. What is the output of step 5 above, explain the error? ***(1 mark)*** The node.js application is unable to connect to the MySQL container.
+1. What is the output of step 5 above, explain the error? ***(1 mark)*** 
+___The node.js application is unable to connect to the MySQL container.___
 
 
 2. Show the instruction needed to make this work. ***(1 mark)*** 
+```
   1. docker network connect mysqlnet nodejs-container
   2. Check the MySQL connection in the index.js
   3. Make sure mytable is created and populated in MySQL
   4. Restart both containers: 
   docker restart mysql-container
   docker restart nodejs-container
-
+```
 
 
 
